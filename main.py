@@ -17,7 +17,6 @@ def validacaoMatricula():
             break
     return matricula
 
-
 def validacaoFuncao():
 
     while True:
@@ -28,7 +27,6 @@ def validacaoFuncao():
         else:
             print("Digite uma função valida")
     return funcao
-
 
 def createUser():
     """ usuario = ["nome"[0], "matricula"[1], "funcao"[2]] """
@@ -57,4 +55,8 @@ def ListarAlunos():
         if usuario[2] == "aluno":
             alunos.append(usuario)
     return print(f"Os Professores cadastrados sao:{alunos}")
+
 createUser()
+ListarProfessores()
+ListarAlunos()
+
