@@ -1,4 +1,6 @@
 usuarios = []
+professores = [] 
+alunos = []
 
 
 def validacaoMatricula():
@@ -42,5 +44,17 @@ def createUser():
     print(f"Novo usuario adicionado{usuarios}")
     return usuarios
 
+def ListarProfessores():
+    global professores
+    for usuario in usuarios:
+        if usuario[2] == "professor":
+            professores.append(usuario)
+    return print(f"Os Professores cadastrados sao:{professores}")
 
+def ListarAlunos():
+    global alunos
+    for usuario in usuarios:
+        if usuario[2] == "aluno":
+            alunos.append(usuario)
+    return print(f"Os Professores cadastrados sao:{alunos}")
 createUser()
